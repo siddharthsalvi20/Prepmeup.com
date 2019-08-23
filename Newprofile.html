@@ -304,12 +304,12 @@
            document.getElementById("refer").innerHTML="";
                 var mail=document.getElementById("emailinput").value;
          
-                if(mail.charAt(mail.length-1)!='m' && mail.charAt(mail.length-2)!='o'&& mail.charAt(mail.length-3)!='c' && mail.charAt(mail.length-3)!='.' )
+                if(mail.charAt(mail.length-1)!='m' && mail.charAt(mail.length-2)!='o'&& mail.charAt(mail.length-3)!='c' && mail.charAt(mail.length-3)!='.' || mail.includes("@") || mail=="" )
                     {
                         window.alert("Please enter a valid email id");
                           document.getElementById("mail").innerHTML="";
                     }
-                else{
+               /*else{
                    document.getElementById("mailout").innerHTML=mail;   
                 }
                 if(mail.includes("@"))
@@ -324,7 +324,7 @@
                  if(mail=="")
                     {
                         document.getElementById("mail").innerHTML="";
-                    }
+                    }*/
                else
             {
                 document.getElementById("mailout").innerHTML=mail; 
