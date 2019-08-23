@@ -250,12 +250,12 @@
                 document.getElementById("refer2").innerHTML="";
            document.getElementById("refer").innerHTML="";
                 var mail=document.getElementById("mailedit").value;
-                if(mail.charAt(mail.length-1)!='m' && mail.charAt(mail.length-2)!='o'&& mail.charAt(mail.length-3)!='c' && mail.charAt(mail.length-3)!='.' )
+                if(mail.charAt(mail.length-1)!='m' && mail.charAt(mail.length-2)!='o'&& mail.charAt(mail.length-3)!='c' && mail.charAt(mail.length-3)!='.' || mail.includes("@")  || mail=="")
                     {
                         window.alert("Please enter a valid email id");
                           document.getElementById("mail").innerHTML="<p>8alienforce@gmail.com</p>";
                     }
-                else{
+               /* else{
                    document.getElementById("mail").innerHTML=mail;   
                 }
                 if(mail.includes("@"))
@@ -270,7 +270,7 @@
                  if(mail=="")
                     {
                         document.getElementById("mail").innerHTML="<p>8alienforce@gmail.com</p>";
-                    }
+                    }*/
                else
             {
                 document.getElementById("mail").innerHTML=mail; 
