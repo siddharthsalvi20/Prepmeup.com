@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
+<title>Carousel</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">  
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">   
+
+<style>    
+    <style>
+        
+         .make{
+            
+            background-color:rgba(248, 248, 178, 0.7);
+            width:50%;
+            margin-left: 20px;
+            border-radius: 20px;
+            display: block;
+            box-shadow: 10px 10px 5px grey;
+            border-color: aliceblue;
+            border-style: ridge;
+            padding-left: 5px;
+            padding-right=5px;
+            
+            
+            
+            
+        
+        
+    
+            
+            
+        }
+        #name{
+            
+            color:#09edd3;
+           
+           
+            font-weight:bold;
+          
+    
+            
+        }
+        .no{
+            
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+        }
+         .head{
+        
+        background-color: hsla(69, 66%, 80%, 0.92);
+        height:60px;
+        color:aliceblue
+    }
+        .center{
+            
+            display:block;
+            margin-left:auto;
+                margin-right: auto;
+            width:20%;
+        }
+        .head1{
+            
+            color:white;
+            
+                
+        }
+        .back{
+            background-image: url(Images/bulb.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            width:auto;
+            
+        }
+        .back2{
+            background-image: linear-gradient(0deg,#f4f489,#b4f7b4);
+            background-repeat: no-repeat;
+            background-size:cover;
+            width:auto;
+        }
+
+        #dob{
+              
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet; 
+        }
+        #mail{
+               
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+            border-color: brown;
+            background-color:#b6f479;}
+        #sap{
+               
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+              background-color:#b6f479;
+        }
+        .personal{
+            color:white;
+            margin-left: 20px;
+            
+        }
+        #numout{
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet; 
+             background-color:#b6f479;
+       
+        }
+        #college{
+             font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+              background-color:#b6f479;
+        }
+        
+        .prog{
+            color:white;
+            text-decoration: underline;
+            font-weight:bold;
+        }
+        .thead1{
+            background-color: #e6f479;
+            color:blueviolet;
+                
+        }
+        #dob{
+             font-weight:bold;
+            font-size:20px;
+            color:blueviolet; 
+             background-color:#b6f479;
+        }
+        #nameout{
+             font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+              background-color:#b6f479;
+        }
+        #mailout{
+             font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+              background-color:#b6f479;
+        }
+        #pa1{
+             font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+              background-color:#b6f479;
+        }
+       
+    </style>
+    
+</head>
+    <body>
+    <div class="container-fluid">
+        <h1 class=" head text-info"><strong>Prepmeup.com</strong></h1>
+    <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link" href="Homepage.html">Home</a>
+    </li>
+         <li class="nav-item">
+      <a class="nav-link" href="#">About Us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle hover" data-toggle="dropdown" href="#">Xplore</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item " target="_blank" href="Test1.html">Physics </a>
+        <a class="dropdown-item" href="Test2.html" target="_blank">Chemistry</a>
+        <a class="dropdown-item" href="Test3.html" target="_blank">Mathematics</a></div>
+    </li>
+     
+    <li class="nav-item">
+      <a class="nav-link" href="contactdetails.html">Contact Us</a>
+    </li>
+  </ul>
+    <div class="carousel slide" id="myCarousel" data-interval="false">
+
+<div class="carousel-inner">
+<div class="carousel-item active">
+
+    <div class="carousel-text">
+   <div class="back">    
+     <h2 class=" head1"><strong><u>Create Profile</u></strong></h2>
+    
+    
+       <br />
+       
+       
+    <h3  id="name" class="text-info">Name: </h3>
+    <h4 class="input1"><input type="text" id="nameinput" placeholder="Name" /></h4>
+       <br />
+     <h3  id="age" class="text-info">Age:</h3>
+    <h4 ><input type="number" id="ageinput" placeholder="Age" /></h4>
+       <br />
+        <h3  id="gender" class="text-info">Gender: </h3>
+    <h4>   <input type="radio" class="genderinput" name="mf" value="m">Male <input type="radio" class="genderinput" name="mf" value="f">Female</h4><br />
+       <h3 class="text-info">Date Of Birth: </h3>
+       <h4><input type="date" id="dateinput" /></h4>
+       <br />
+       <h3  class="text-info">Phone Number: </h3>
+    <h4 ><input type="text" id="numberinput" placeholder="Number" /></h4>
+       <br />
+       <h3 class="text-info">Email ID: </h3>
+    <h4><input type="email" id="emailinput" placeholder="Email ID" /></h4>
+       <br />
+       <h3 class="text-info">Password: </h3>
+    <h4><input type="password" id="passinput" placeholder="Password" /></h4>
+       <br />
+       <h3  class="text-info">College: </h3>
+    <h4 ><input type="text" id="collegeinput" placeholder="College" /></h4>
+       <br />
+       <h3 class="text-info">Course: </h3>
+      <h4>   <input type="radio" class="courseinput" name="course" value="JEE">JEE <input type="radio" class="courseinput" name="course" value="MH-CET">MH-CET <input type="radio" class="courseinput" name="course" value="JEE & MHCET">Both</h4>
+       <br />
+       <button class="btn btn-success" onclick="displayDetails()">Submit</button>
+       <a class="carousel-control-next" href="#myCarousel" data-slide="next">
+    <span class="btn btn-success" >VIEW PROFILE</span>
+    </a>
+    
+    <br />
+    <br />
+    <br />    
+        </div>
+    
+    
+    </div>    
+</div>
+<div class="carousel-item">
+<div class="back2">
+<h2 class="personal"><u>Profile:</u></h2>         
+    <div class="make" id="make">    
+   
+   
+    <h5 id="change" class="text-info"><strong><u>Test ID:</u></strong></h5>
+        <p  id="sap">60004180105</p>
+    <h5 class="text-info"><strong><u>Name:</u></strong></h5>
+    <p  id="nameout"></p>
+        
+    <h5 class="text-info"><strong><u>Date Of Birth:</u></strong></h5>
+    <p  id="dob"></p>
+        <h5 class=text-info><strong><u>Number:</u></strong></h5>
+    <p id="numout"></p>
+        <p id="refer2"></p>
+        <h5  class="text-info"><strong><u>Email ID:</u></strong></h5>
+        <p id="mailout" ></p>
+         <h5  class="text-info"><strong><u>Course:</u></strong></h5>
+        <p id="pa1" ></p>
+        
+
+    <h5 class="text-info"><strong><u>College:</u></strong> </h5>
+    <p   id="college"></p></div><br />    
+        
+    <br />  
+    <br />
+    <br />    
+        <p id="refer"></p>
+        </div>
+    
+</div>    
+</div>
+
+    
+</div>    
+    
+        
+    </div>
+        
+   
+    <script>
+        var names=[];
+            function displayDetails()
+            {
+            var n=document.getElementById("nameinput").value;
+                
+                if(n=="")
+                    {
+                    window.alert("Entering A Name is mandatory");
+                    }
+              else{
+  
+
+      document.getElementById("nameout").innerHTML=n;}
+  
+            var d=document.getElementById("dateinput").value;
+            document.getElementById("dob").innerHTML=d;
+                var m=document.getElementById("numberinput").value;
+                if(m.length!=10)
+                    {
+                        window.alert("Please enter a valid number");
+                        document.getElementById("numout").innerHTML="";
+                    }
+                else{
+                document.getElementById("numout").innerHTML=m;}
+                document.getElementById("refer2").innerHTML="";
+           document.getElementById("refer").innerHTML="";
+                var mail=document.getElementById("emailinput").value;
+         
+                if(mail.charAt(mail.length-1)!='m' && mail.charAt(mail.length-2)!='o'&& mail.charAt(mail.length-3)!='c' && mail.charAt(mail.length-3)!='.' )
+                    {
+                        window.alert("Please enter a valid email id");
+                          document.getElementById("mail").innerHTML="";
+                    }
+                else{
+                   document.getElementById("mailout").innerHTML=mail;   
+                }
+                if(mail.includes("@"))
+                    {
+                        document.getElementById("mailout").innerHTML=mail;
+                    }
+                else
+                    {
+                        window.alert("Please enter valid Email ID");
+                        document.getElementById("mail").innerHTML="";
+                    }
+                 if(mail=="")
+                    {
+                        document.getElementById("mail").innerHTML="";
+                    }
+               else
+            {
+                document.getElementById("mailout").innerHTML=mail; 
+            }
+                
+                 var elem=document.getElementsByClassName("courseinput");
+               
+            for(var k=0;k<elem.length;k++)
+            {
+        
+                if(elem[k].checked)
+                    {
+                    names.push(elem[k].value);
+                    }
+            }
+            
+            document.getElementById("pa1").innerHTML=names;
+            
+            }
+            
+        
+        
+        
+        </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>  
+    </body>
+</html>

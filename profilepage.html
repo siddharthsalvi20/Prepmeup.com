@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE-edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1,shrink-to-fit=no">
+    <title>Profile Page</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+   
+    <style>
+        .make{
+            
+            background-color:rgba(248, 248, 178, 0.7);
+            width:50%;
+            margin-left: 20px;
+            border-radius: 20px;
+            display: block;
+            box-shadow: 10px 10px 5px grey;
+            border-color: aliceblue;
+            border-style: ridge;
+            padding-left: 5px;
+            padding-right=5px;
+            
+            
+            
+            
+        
+        
+    
+            
+            
+        }
+        #name{
+            
+            color:#09edd3;
+           
+           
+            font-weight:bold;
+            text-align: center;
+    
+            
+        }
+        .no{
+            
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+        }
+         .head{
+        
+        background-color: hsla(69, 66%, 80%, 0.92);
+        height:60px;
+        color:aliceblue
+    }
+        .center{
+            
+            display:block;
+            margin-left:auto;
+                margin-right: auto;
+            width:20%;
+        }
+        .head1{
+            text-align: center;
+            color:white;
+                
+        }
+        .back{
+            background-image: url(Images/back3.jpg);
+            background-repeat: no-repeat;
+            background-size:cover;
+            background-image: linear-gradient(0deg,#f4f489,#b4f7b4);
+        }
+        #dob{
+              
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet; 
+        }
+        #mail{
+               
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+            border-color: brown;
+            background-color:#b6f479;}
+        #sap{
+               
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+              background-color:#b6f479;
+        }
+        .personal{
+            color:white;
+            margin-left: 20px;
+            
+        }
+        #num{
+            font-weight:bold;
+            font-size:20px;
+            color:blueviolet; 
+             background-color:#b6f479;
+       
+        }
+        #college{
+             font-weight:bold;
+            font-size:20px;
+            color:blueviolet;
+              background-color:#b6f479;
+        }
+        
+        .prog{
+            color:white;
+            text-decoration: underline;
+            font-weight:bold;
+        }
+        .thead1{
+            background-color: #e6f479;
+            color:blueviolet;
+                
+        }
+        #dob{
+             font-weight:bold;
+            font-size:20px;
+            color:blueviolet; 
+             background-color:#b6f479;
+        }
+        
+    </style>
+    </head>
+    <body>
+    <div class="container-fluid">    
+    <h1 class=" head text-info"><strong>Prepmeup.com</strong></h1>
+    <ul class="nav nav-tabs nav-justified">
+    <li class="nav-item">
+      <a class="nav-link" href="Homepage.html">Home</a>
+    </li>
+        <li class="nav-item">
+      <a class="nav-link" href="#">About Us</a>
+    </li>
+    <li class="nav-item dropdown">
+      <a class="nav-link dropdown-toggle hover" data-toggle="dropdown" href="#">Xplore</a>
+      <div class="dropdown-menu">
+        <a class="dropdown-item " target="_blank" href="Test1.html">Physics</a>
+        <a class="dropdown-item" href="Test2.html">Chemistry</a>
+        <a class="dropdown-item" href="Test3.html">Mathematics</a></div>
+    </li>
+      
+    <li class="nav-item">
+      <a class="nav-link" href="contactdetails.html">Contact Us</a>
+    </li>
+  </ul>
+    <div class="back">    
+     <h2 class=" head1"><strong><u>Profile</u></strong></h2>
+    <img src="Images/newphoto.jpg" alt="New Photo" class= "center rounded-circle">    
+    <br />
+    <h2  id="name" class="text-info">Siddharth Salvi</h2>    
+    <br />
+    <br />
+    <br />
+    <div class="row">
+    <div class="col-sm-6">    
+        <h2 class="personal"><u>Personal Details:</u></h2>         
+    <div class="make" id="make">    
+   
+   
+    <h5 id="change" class="text-info"><strong><u>Test ID:</u></strong></h5>
+        <p  id="sap">60004180105</p>
+    <h5 class="text-info"><strong><u>Date Of Birth:</u></strong></h5>
+    <p  id="dob">07/08/1999</p>
+        <h5 class=text-info><strong><u>Number:</u></strong></h5>
+    <p id="num">9820992351</p>
+        <p id="refer2"></p>
+        <h5  class="text-info"><strong><u>Email ID:</u></strong></h5>
+        <p id="mail" >8alienforce@gmail.com</p>
+
+    <h5 class="text-info"><strong><u>College:</u></strong> </h5>
+    <p   id="college">D.J Sanghvi</p></div><br />    
+        <button id="button1" onclick="editText()" class="butt btn btn-success">CLICK TO CHANGE THE DETAILS</button>
+    <br />  
+    <br />
+    <br />    
+        <p id="refer"></p>
+        </div>
+        <div class="col-sm-6">
+        <h2 class="prog">JEE Course Progress Details:</h2>    
+         <table class="table table-striped table-bordered table-hover table-dark thread-light">
+    <table class="table table-striped table-bordered table-hover">
+        <thead class="thead1">
+    <tr><th>Test Topic</th><th>Score</th><th>Rank</th></thead></tr>
+        <tr><td>Test 1</td><td>Score1</td><td>Rank1</td></tr>
+        <tr><td>Test2</td><td>Score2</td><td>Rank2</td></tr>
+        <tr><td>Test 3</td><td>Score3</td><td>Rank3</td></tr>
+        </table>
+        </div>
+        </div>
+        </div>
+        </div>
+
+        <script>
+        function editText()
+            {
+                document.getElementById("make").style="color:white;"
+          document.getElementById("name").innerHTML="<p id='dispname'>Enter Name Here<input type='text' id='nameinput' placeholder='Name'/></p>";
+            document.getElementById("dob").innerHTML="<p>Enter The Date Of Birth<input type='date' id='dateinput'/></p>";    
+            document.getElementById("refer").innerHTML="<button id='display' class='btn btn-success' onclick='displayDetails()'>DISPLAY THE DETAILS</button>";    
+            document.getElementById("num").innerHTML="<p>Enter The Number<input type='text' class='form-control' placeholder='Number' id='numinput'/></p>";
+                document.getElementById("refer2").innerHTML="<h6 class='small text-danger'>Number must be 10 char long</h6>"
+            document.getElementById("mail").innerHTML="<p>Enter The Email Id<input type='email' id='mailedit'/></p>"
+                 document.getElementById("college").innerHTML="<p>Enter The College Name<input type='text' id='coll'/></p>"
+            }
+            function displayDetails()
+            {
+                document.getElementById("make").backgroundColor="white";
+            var n=document.getElementById("nameinput").value;
+                
+                if(n=="")
+                    {
+                    document.getElementById("name").innerHTML="<p>Siddharth Salvi</p>";
+                    }
+              else{
+  
+
+      document.getElementById("name").innerHTML=n;}
+  
+            var d=document.getElementById("dateinput").value;
+                if(d=="")
+                    {
+                        document.getElementById("dob").innerHTML="<p>07/08/1999</p>";
+                    }
+                else{
+            document.getElementById("dob").innerHTML=d;}
+                var m=document.getElementById("numinput").value;
+                if(m.length!=10)
+                    {
+                     window.confirm("Please enter a valid phone number");
+                        document.getElementById("num").innerHTML="";
+                    }
+                else{
+                  document.getElementById("num").innerHTML=m;  
+                }
+                if(m=="")
+                    {  
+                        document.getElementById("num").innerHTML="<p>9820495807</p>";
+                    }
+                else{
+                document.getElementById("num").innerHTML=m;}
+                document.getElementById("refer2").innerHTML="";
+           document.getElementById("refer").innerHTML="";
+                var mail=document.getElementById("mailedit").value;
+                if(mail.charAt(mail.length-1)!='m' && mail.charAt(mail.length-2)!='o'&& mail.charAt(mail.length-3)!='c' && mail.charAt(mail.length-3)!='.' )
+                    {
+                        window.alert("Please enter a valid email id");
+                          document.getElementById("mail").innerHTML="<p>8alienforce@gmail.com</p>";
+                    }
+                else{
+                   document.getElementById("mail").innerHTML=mail;   
+                }
+                if(mail.includes("@"))
+                    {
+                        document.getElementById("mail").innerHTML=mail;
+                    }
+                else
+                    {
+                        window.alert("Please enter valid Email ID");
+                        document.getElementById("mail").innerHTML="<p>8alienforce@gmail.com</p>";
+                    }
+                 if(mail=="")
+                    {
+                        document.getElementById("mail").innerHTML="<p>8alienforce@gmail.com</p>";
+                    }
+               else
+            {
+                document.getElementById("mail").innerHTML=mail; 
+            }
+            var college=document.getElementById("coll").value;
+                if(college=="")
+                    {
+                         document.getElementById("college").innerHTML="<p>D.J. Sanghvi</p>";
+                    }
+                else
+                    {
+                        document.getElementById("college").innerHTML=college; 
+                    }
+            
+            }
+            
+        
+        
+        
+        </script>
+    
+    
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    </body>
+
+</html>
